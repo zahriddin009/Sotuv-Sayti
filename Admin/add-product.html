@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahsulot qo‘shish | MEGA SHOP Admin</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add-product.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>MEGA <span>SHOP</span></h2>
+                <p>Admin Panel</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="index.html">📊 Dashboard</a>
+                <a href="products.html">📦 Mahsulotlar</a>
+                <a href="add-product.html" class="active">➕ Mahsulot qo‘shish</a>
+                <!-- <a href="categories.html">📁 Kategoriyalar</a> -->
+                <a href="orders.html">🛒 Buyurtmalar</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="../index.html">🌐 Saytga qaytish</a>
+                <a href="login.html" id="logoutBtn">🚪 Chiqish</a>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="admin-header">
+                <div>
+                    <h1 id="pageTitle">Yangi mahsulot</h1>
+                    <p>Do‘koningizga yangi mahsulot qo‘shing</p>
+                </div>
+
+                <a href="products.html" class="back-btn">
+                    ← Orqaga
+                </a>
+            </header>
+
+            <section class="product-form-section">
+
+                <form id="productForm">
+
+                    <div class="form-card">
+                        <h2>Mahsulot haqida</h2>
+
+                        <div class="form-group">
+                            <label for="productName">Mahsulot nomi</label>
+                            <input type="text" id="productName" placeholder="Masalan: iPhone 17 Pro Max" required>
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="productPrice">Narxi (so‘m)</label>
+                                <input type="number" id="productPrice" placeholder="15000000" min="0" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productOldPrice">Eski narxi (ixtiyoriy)</label>
+                                <input type="number" id="productOldPrice" placeholder="17000000" min="0">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productCategory">Kategoriya</label>
+                            <select id="productCategory" required>
+                                <option value="">Kategoriyani tanlang</option>
+                                <option value="Elektronika">Elektronika</option>
+                                <option value="Telefonlar">Telefonlar</option>
+                                <option value="Kompyuterlar">Kompyuterlar</option>
+                                <option value="Kiyimlar">Kiyimlar</option>
+                                <option value="Aksessuarlar">Aksessuarlar</option>
+                                <option value="Uy jihozlari">Uy jihozlari</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productImage">Mahsulot rasmi URL manzili</label>
+                            <input type="url" id="productImage" placeholder="https://example.com/image.jpg">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productDescription">Mahsulot tavsifi</label>
+                            <textarea id="productDescription" rows="5"
+                                placeholder="Mahsulot haqida ma'lumot yozing..."></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="products.html" class="cancel-btn">
+                            Bekor qilish
+                        </a>
+
+                        <button type="submit" id="saveProductBtn">
+                            Mahsulotni saqlash
+                        </button>
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/add-product.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+
+.product-detail-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.detail-breadcrumb {
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.detail-breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.detail-image {
+    width: 100%;
+    height: 430px;
+    object-fit: contain;
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.detail-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-category {
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.detail-info h1 {
+    font-size: 30px;
+    color: #172033;
+    margin-bottom: 15px;
+}
+
+.detail-rating {
+    color: #f59e0b;
+    margin-bottom: 20px;
+}
+
+.detail-prices {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.detail-price {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.detail-old-price {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.detail-description {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.detail-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.detail-cart-btn,
+.detail-favorite-btn {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.detail-cart-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.detail-cart-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.detail-favorite-btn {
+    background: #f1f5f9;
+    color: #333;
+}
+
+.detail-favorite-btn:hover {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.detail-features {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #555;
+    line-height: 2;
+}
+
+@media (max-width: 768px) {
+    .product-detail {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .detail-image {
+        height: 300px;
+    }
+
+    .detail-info h1 {
+        font-size: 23px;
+    }
+
+    .detail-price {
+        font-size: 25px;
+    }
+}

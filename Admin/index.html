@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGA SHOP | Admin Panel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <span>MEGA <b>SHOP</b></span>
+            </div>
+
+            <div class="menu-title">MENU</div>
+
+            <nav class="sidebar-menu">
+
+                <a href="index.html" class="menu-link active">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="products.html" class="menu-link">
+                    <i class="fa-solid fa-box"></i>
+                    <span>Mahsulotlar</span>
+                </a>
+
+                <a href="add-product.html" class="menu-link">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Mahsulot qo'shish</span>
+                </a>
+
+        
+
+                <a href="orders.html" class="menu-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Buyurtmalar</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="../index.html" target="_blank" class="menu-link">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Saytga o'tish</span>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div class="topbar-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div>
+                        <h2>Dashboard</h2>
+                        <p>Xush kelibsiz, Admin!</p>
+                    </div>
+                </div>
+
+                <div class="topbar-right">
+
+                    <button class="notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span></span>
+                    </button>
+
+                    <div class="admin-profile">
+                        <div class="profile-avatar">A</div>
+                        <div>
+                            <h4>Administrator</h4>
+                            <p>Super Admin</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- DASHBOARD -->
+            <section class="dashboard-content">
+
+                <div class="welcome-banner">
+                    <div>
+                        <span>MEGA SHOP ADMIN</span>
+                        <h1>Boshqaruv paneliga xush kelibsiz!</h1>
+                        <p>Do'koningizni bitta joydan boshqaring.</p>
+                    </div>
+
+                    <div class="welcome-icon">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                </div>
+
+
+                <!-- STATISTICS -->
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <p>Jami mahsulotlar</p>
+                            <h2 id="totalProducts">0</h2>
+                        </div>
+                        <div class="stat-icon purple">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+                    </div>
+
+    
+
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <p>Buyurtmalar</p>
+                            <h2 id="totalOrders">0</h2>
+                        </div>
+                        <div class="stat-icon blue">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <p>Do'kon holati</p>
+                            <h2 class="online-status">Online</h2>
+                        </div>
+                        <div class="stat-icon green">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+                <div class="section-heading">
+                    <div>
+                        <h2>Tezkor amallar</h2>
+                        <p>Kerakli bo'limga tez o'ting</p>
+                    </div>
+                </div>
+
+                <div class="actions-grid">
+
+                    <a href="add-product.html" class="action-card">
+                        <div class="action-icon purple">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <h3>Mahsulot qo'shish</h3>
+                        <p>Yangi mahsulot yarating</p>
+                        <i class="fa-solid fa-arrow-right action-arrow"></i>
+                    </a>
+
+                    <a href="products.html" class="action-card">
+                        <div class="action-icon blue">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <h3>Mahsulotlar</h3>
+                        <p>Barcha mahsulotlarni boshqaring</p>
+                        <i class="fa-solid fa-arrow-right action-arrow"></i>
+                    </a>
+
+                    <a href="categories.html" class="action-card">
+                        <div class="action-icon orange">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3>Kategoriyalar</h3>
+                        <p>Kategoriyalarni boshqaring</p>
+                        <i class="fa-solid fa-arrow-right action-arrow"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

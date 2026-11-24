@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGA SHOP | Admin Login</title>
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-left">
+
+            <div class="login-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <span>MEGA <b>SHOP</b></span>
+            </div>
+
+            <div class="login-content">
+                <span class="welcome-label">ADMINISTRATION</span>
+
+                <h1>Admin Panelga<br> xush kelibsiz!</h1>
+
+                <p>
+                    MEGA SHOP boshqaruv tizimiga kiring
+                    va do'koningizni boshqarishni boshlang.
+                </p>
+
+                <div class="login-features">
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Xavfsiz boshqaruv
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-box"></i>
+                        Mahsulotlarni boshqarish
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-chart-line"></i>
+                        Do'kon statistikasi
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-footer">
+                © 2026 MEGA SHOP. All rights reserved.
+            </div>
+
+        </div>
+
+
+        <div class="login-right">
+
+            <div class="login-form">
+
+                <div class="form-icon">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+
+                <h2>Admin Login</h2>
+                <p>Davom etish uchun ma'lumotlaringizni kiriting.</p>
+
+                <form id="loginForm">
+
+                    <div class="input-group">
+                        <label>Login</label>
+
+                        <div class="input-box">
+                            <i class="fa-solid fa-user"></i>
+
+                            <input type="text" id="username" placeholder="Loginni kiriting" autocomplete="username"
+                                required>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label>Parol</label>
+
+                        <div class="input-box">
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input type="password" id="password" placeholder="Parolni kiriting"
+                                autocomplete="current-password" required>
+
+                            <button type="button" id="togglePassword">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="error-message" id="errorMessage"></div>
+
+                    <button type="submit" class="login-btn">
+                        Tizimga kirish
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+                <a href="../index.html" class="back-link">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Asosiy saytga qaytish
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

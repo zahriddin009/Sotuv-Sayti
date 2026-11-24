@@ -1,0 +1,529 @@
+
+/* ==============================
+   MEGA SHOP - COMPONENTS
+============================== */
+
+/* PRODUCT CARD */
+
+.product-card {
+    background: #fff;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.product-card:hover {
+    border-color: #eee3ff;
+}
+
+.product-image {
+    position: relative;
+    background: #f7f7f8;
+}
+
+.product-image img {
+    display: block;
+}
+
+.product-info {
+    padding: 3px 2px;
+}
+
+.product-title {
+    color: #333;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-rating span {
+    color: #777;
+}
+
+/* FAVORITE BUTTON */
+
+.favorite-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: white;
+    color: #777;
+    font-size: 20px;
+    z-index: 5;
+    box-shadow: 0 2px 8px #00000012;
+    transition: 0.2s;
+}
+
+.favorite-btn:hover {
+    color: #ff3b70;
+    transform: scale(1.1);
+}
+
+.favorite-btn.active {
+    color: #ff3b70;
+}
+
+/* PRODUCT DISCOUNT */
+
+.discount-badge {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    padding: 5px 8px;
+    background: #ff3b70;
+    color: white;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* CATEGORY CARDS */
+
+.category-card {
+    background: #f7f4ff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.category-card:hover {
+    background: #eee3ff;
+    transform: translateY(-4px);
+}
+
+.category-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.category-card h3 {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* NOTIFICATION */
+
+.notification {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: #222;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 9px;
+    z-index: 9999;
+    box-shadow: 0 5px 20px #0002;
+    animation: fadeUp 0.3s ease;
+}
+
+/* EMPTY STATE */
+
+.empty-state {
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.empty-state .empty-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.empty-state h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #888;
+    line-height: 1.6;
+}
+
+/* SEARCH RESULTS */
+
+.search-results {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px #00000012;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-result-item:hover {
+    background: #f7f4ff;
+}
+
+.search-result-item img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.search-result-item h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.search-result-item span {
+    color: #7000ff;
+    font-weight: 700;
+}
+
+/* CART */
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 9px;
+    background: #f7f7f7;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    background: #f2eaff;
+    color: #7000ff;
+    font-weight: 700;
+}
+
+.remove-btn {
+    background: #fff0f3;
+    color: #ff3b70;
+    padding: 9px 13px;
+    border-radius: 7px;
+}
+
+/* BUTTONS */
+
+.primary-btn {
+    background: #7000ff;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.primary-btn:hover {
+    background: #5700cc;
+}
+
+.secondary-btn {
+    background: #f2eaff;
+    color: #7000ff;
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-weight: 700;
+}
+
+/* BADGES */
+
+.badge {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 5px;
+    background: #eee3ff;
+    color: #7000ff;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* SMOOTH TRANSITIONS */
+
+button,
+a,
+.product-card {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 2px solid #7000ff;
+    outline-offset: 3px;
+}
+
+
+
+
+/* ==============================
+   MEGA SHOP FOOTER
+============================== */
+
+.footer {
+    background: #181522;
+    color: #fff;
+    margin-top: 70px;
+    padding-top: 55px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 45px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-content p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-content h3 {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.footer-content a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-content a:hover {
+    color: #a879ff;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #302b3b;
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+}
+
+
+
+/* ==============================
+   MEGA SHOP - COMPLETE DARK MODE
+============================== */
+
+/* PRODUCT CARDS */
+
+body.dark-mode .product-card {
+    background: #1d1d26;
+    border-color: #30303a;
+    color: #f5f5f5;
+}
+
+body.dark-mode .product-card:hover {
+    border-color: #7000ff;
+}
+
+body.dark-mode .product-image {
+    background: #252530;
+}
+
+body.dark-mode .product-title {
+    color: #f5f5f5;
+}
+
+body.dark-mode .product-rating span {
+    color: #aaa;
+}
+
+body.dark-mode .product-price {
+    color: #b58aff;
+}
+
+body.dark-mode .old-price {
+    color: #999;
+}
+
+/* FAVORITES */
+
+body.dark-mode .favorite-btn {
+    background: #30303b;
+    color: #ddd;
+}
+
+/* CATEGORY */
+
+body.dark-mode .category-card {
+    background: #22212d;
+    color: #fff;
+}
+
+body.dark-mode .category-card h3 {
+    color: #fff;
+}
+
+/* SEARCH */
+
+body.dark-mode .search-results,
+body.dark-mode .search-suggestions {
+    background: #22222c;
+    border-color: #393946;
+    color: #fff;
+}
+
+body.dark-mode .search-result-item:hover {
+    background: #333044;
+}
+
+body.dark-mode .search-result-item h4 {
+    color: #fff;
+}
+
+body.dark-mode .search-suggestion {
+    background: #22222c;
+    color: #fff;
+    border-bottom: 1px solid #393946;
+}
+
+body.dark-mode .search-suggestion h4 {
+    color: #fff;
+}
+
+body.dark-mode .search-suggestion p {
+    color: #aaa;
+}
+
+body.dark-mode .search-empty {
+    color: #ddd;
+}
+
+/* CART */
+
+body.dark-mode .cart-item {
+    border-color: #393946;
+    color: #fff;
+}
+
+body.dark-mode .cart-item img {
+    background: #252530;
+}
+
+body.dark-mode .quantity-control button {
+    background: #33254b;
+    color: #c7a5ff;
+}
+
+body.dark-mode .remove-btn {
+    background: #48212d;
+    color: #ff7b9d;
+}
+
+/* BUTTONS */
+
+body.dark-mode .secondary-btn {
+    background: #33254b;
+    color: #c7a5ff;
+}
+
+body.dark-mode .badge {
+    background: #33254b;
+    color: #c7a5ff;
+}
+
+/* EMPTY STATE */
+
+body.dark-mode .empty-state {
+    color: #fff;
+}
+
+body.dark-mode .empty-state p {
+    color: #aaa;
+}
+
+/* GENERAL TEXT */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode label {
+    color: inherit;
+}
+
+/* INPUTS */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #22222c;
+    color: #fff;
+    border-color: #444450;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #999;
+}
+
+/* FOOTER */
+
+body.dark-mode .footer {
+    background: #0c0c11;
+    border-color: #30303a;
+}
+
+/* NOTIFICATION */
+
+body.dark-mode .notification {
+    background: #7000ff;
+    color: white;
+}

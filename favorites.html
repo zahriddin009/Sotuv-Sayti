@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevimlilar | AsaStore</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/favorites.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">AsaStore</a>
+
+            <nav>
+                <a href="index.html">Bosh sahifa</a>
+                <a href="products.html">Mahsulotlar</a>
+                <a href="favorites.html" class="active">Sevimlilar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="favorites-page">
+
+        <div class="favorites-heading">
+            <div>
+                <span class="favorites-label">SIZNING TANLOVINGIZ</span>
+                <h1>Sevimli mahsulotlar ❤️</h1>
+                <p>O'zingiz yoqtirgan mahsulotlar shu yerda saqlanadi.</p>
+            </div>
+
+            <a href="products.html" class="continue-shopping">
+                Xaridni davom ettirish →
+            </a>
+        </div>
+
+        <div id="favoritesContainer" class="favorites-grid">
+            <!-- Mahsulotlar JavaScript orqali chiqadi -->
+        </div>
+
+        <div id="emptyFavorites" class="empty-favorites">
+            <div class="empty-icon">♡</div>
+            <h2>Hozircha sevimlilar yo'q</h2>
+            <p>O'zingizga yoqqan mahsulotlarni sevimlilarga qo'shing.</p>
+            <a href="products.html">Mahsulotlarni ko'rish</a>
+        </div>
+
+    </main>
+
+    <script src="js/header.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/footer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MEGA SHOP — Online Shopping</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- TOP HEADER -->
+    <div class="top-header">
+        <div class="container top-header-content">
+            <div class="location">
+                📍 Toshkent
+            </div>
+
+            <div class="top-links">
+                <a href="#">Sotuvchi bo'lish</a>
+                <a href="#">Yordam</a>
+                <a href="#">Buyurtmalarim</a>
+                <a href="#">O'zbekcha</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span>MEGA</span> SHOP
+            </a>
+
+            <button class="catalog-btn" id="catalogBtn">
+                ☰ Katalog
+            </button>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Mahsulotlar va turkumlarni izlash">
+                <button id="searchBtn">🔍</button>
+            </div>
+
+            <nav class="header-actions">
+                
+                <a href="favorites.html">♡ <span>Saralangan</span></a>
+                <a href="cart.html">🛍️ <span>Savat</span> <b id="cartCount">0</b></a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- CATEGORY NAVIGATION -->
+    <nav class="category-nav">
+        <div class="container category-links">
+            <a href="#">🔥 Chegirmalar</a>
+            <a href="#">📱 Elektronika</a>
+            <a href="#">👕 Kiyimlar</a>
+            <a href="#">🏠 Uy uchun</a>
+            <a href="#">💄 Go'zallik</a>
+            <a href="#">🧸 Bolalar uchun</a>
+            <a href="#">⚽ Sport</a>
+            <a href="#">Yana ▾</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HERO BANNER -->
+        <section class="container hero-section">
+
+            <div class="hero-banner">
+                <div class="hero-content">
+                    <span class="hero-label">MEGA AKSIYA</span>
+
+                    <h1>80% GACHA CHEGIRMALAR!</h1>
+
+                    <p>Eng yaxshi mahsulotlar, eng qulay narxlarda.</p>
+
+                    <a href="products.html" class="hero-btn">
+                        Xarid qilish →
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- QUICK CATEGORIES -->
+        <section class="container quick-categories">
+
+            <a href="products.html" class="quick-category">
+                📱 Elektronika
+            </a>
+
+            <a href="products.html" class="quick-category">
+                🏠 Uy uchun
+            </a>
+
+            <a href="products.html" class="quick-category">
+                👕 Moda
+            </a>
+
+            <a href="products.html" class="quick-category">
+                🔥 Aksiyalar
+            </a>
+
+            <a href="products.html" class="quick-category">
+                🧸 Bolalar
+            </a>
+
+        </section>
+
+        <!-- POPULAR PRODUCTS -->
+        <section class="container products-section">
+
+            <div class="section-heading">
+                <h2>Mashhur mahsulotlar</h2>
+                <a href="products.html">Barchasi →</a>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+
+                <!-- Products will appear here using JavaScript -->
+
+            </div>
+
+            <div class="load-more">
+                <button id="loadMoreBtn">
+                    Yana ko'rsatish
+                </button>
+            </div>
+
+        </section>
+
+        <!-- PROMOTION -->
+        <section class="container promotion-section">
+            <div class="promotion-banner">
+                <h2>MEGA SHOP bilan xarid qilish yanada oson!</h2>
+                <p>Sevimli mahsulotlaringizni bir joydan toping.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+
+</html>

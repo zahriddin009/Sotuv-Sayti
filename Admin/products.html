@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGA SHOP | Mahsulotlar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <span>MEGA <b>SHOP</b></span>
+            </div>
+
+            <div class="menu-title">MENU</div>
+
+            <nav class="sidebar-menu">
+
+                <a href="index.html" class="menu-link">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="products.html" class="menu-link active">
+                    <i class="fa-solid fa-box"></i>
+                    <span>Mahsulotlar</span>
+                </a>
+
+                <a href="add-product.html" class="menu-link">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Mahsulot qo'shish</span>
+                </a>
+
+                <a href="categories.html" class="menu-link">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Kategoriyalar</span>
+                </a>
+
+                <a href="orders.html" class="menu-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Buyurtmalar</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="../index.html" target="_blank" class="menu-link">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Saytga o'tish</span>
+                </a>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div class="topbar-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div>
+                        <h2>Mahsulotlar</h2>
+                        <p>Barcha mahsulotlarni boshqaring</p>
+                    </div>
+                </div>
+
+                <div class="topbar-right">
+
+                    <div class="admin-profile">
+                        <div class="profile-avatar">A</div>
+                        <div>
+                            <h4>Administrator</h4>
+                            <p>Super Admin</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section class="products-content">
+
+                <div class="products-heading">
+
+                    <div>
+                        <h1>Mahsulotlar</h1>
+                        <p>Do'koningizdagi barcha mahsulotlar</p>
+                    </div>
+
+                    <a href="add-product.html" class="add-product-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Mahsulot qo'shish
+                    </a>
+
+                </div>
+
+
+                <!-- STATISTICS -->
+                <div class="product-summary">
+
+                    <div class="summary-card">
+                        <div>
+                            <p>Jami mahsulotlar</p>
+                            <h2 id="productCount">0</h2>
+                        </div>
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+
+                    <div class="summary-card">
+                        <div>
+                            <p>Qidiruv natijalari</p>
+                            <h2 id="searchCount">0</h2>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT TABLE -->
+                <div class="products-box">
+
+                    <div class="products-toolbar">
+
+                        <div>
+                            <h3>Barcha mahsulotlar</h3>
+                            <p>Mahsulotlaringiz ro'yxati</p>
+                        </div>
+
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="productSearch" placeholder="Mahsulot qidirish...">
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Mahsulot</th>
+                                    <th>Kategoriya</th>
+                                    <th>Narxi</th>
+                                    <th>Sana</th>
+                                    <th>Amallar</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="productsTable">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <div class="empty-products" id="emptyProducts">
+                        <i class="fa-solid fa-box-open"></i>
+                        <h3>Hozircha mahsulotlar yo'q</h3>
+                        <p>Yangi mahsulot qo'shish orqali boshlang.</p>
+
+                        <a href="add-product.html" class="add-product-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            Mahsulot qo'shish
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>

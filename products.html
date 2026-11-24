@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barcha mahsulotlar | MEGA SHOP</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .products-page {
+            width: min(1400px, 94%);
+            margin: 0 auto;
+        }
+
+        #productsGrid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 22px;
+            width: 100%;
+        }
+
+        #productsGrid .product-card {
+            width: 100%;
+            min-width: 0;
+            max-width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        #productsGrid .product-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        #productsGrid .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .search-suggestions {
+            display: none;
+        }
+
+        .search-suggestions.active {
+            display: block;
+        }
+
+        @media (max-width: 992px) {
+            #productsGrid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 650px) {
+            #productsGrid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
+
+            #productsGrid .product-image {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            #productsGrid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                MEGA <span>SHOP</span>
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html">Bosh sahifa</a>
+                <a href="products.html">Mahsulotlar</a>
+                <a href="favorites.html">❤️ Saralanganlar</a>
+            </nav>
+
+            <a href="cart.html" class="cart-link">
+                🛒 Savat
+                <span id="cartCount">0</span>
+            </a>
+
+        </div>
+    </header>
+
+    <!-- PRODUCTS PAGE -->
+
+    <main class="products-page">
+
+        <section class="products-heading">
+            <div>
+                <span class="section-label">MEGA SHOP COLLECTION</span>
+                <h1>Barcha mahsulotlar</h1>
+                <p>O'zingizga kerakli mahsulotlarni biz bilan kashf eting.</p>
+            </div>
+        </section>
+
+        <!-- SEARCH -->
+
+        <section class="products-toolbar">
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Mahsulot qidirish..."
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">🔍</button>
+
+                <div id="searchSuggestions" class="search-suggestions"></div>
+
+            </div>
+
+        </section>
+
+        <!-- CATEGORIES -->
+
+        <section class="category-section">
+
+            <h2>Kategoriyalar</h2>
+
+            <div class="category-list">
+
+                <button onclick="filterCategory('all')">Barchasi</button>
+                <button onclick="filterCategory('Elektronika')">Elektronika</button>
+                <button onclick="filterCategory('Kiyimlar')">Kiyimlar</button>
+                <button onclick="filterCategory('Aksessuarlar')">Aksessuarlar</button>
+                <button onclick="filterCategory('Uy uchun')">Uy uchun</button>
+                <button onclick="filterCategory('Sport')">Sport</button>
+                <button onclick="filterCategory('Go‘zallik')">Go'zallik</button>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCTS -->
+
+        <section class="products-section">
+
+            <div class="products-section-heading">
+                <div>
+                    <h2>Bizning mahsulotlar</h2>
+                    <p>Siz uchun tanlangan eng yaxshi mahsulotlar</p>
+                </div>
+
+                <span>30+ mahsulot</span>
+            </div>
+
+            <div id="productsGrid" class="products-grid"></div>
+
+            <button id="loadMoreBtn" class="load-more-btn">
+                Yana mahsulotlarni ko'rish
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/footer.js"></script>
+
+</body>
+</html>
